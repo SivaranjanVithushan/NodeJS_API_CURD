@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { getProduct, getProductById, createProduct, updateProduct, deleteProduct } = require('../controllers/product.contoller.js');
-const validateProduct = require('../middleware/productValidation.js');
+const validateProduct = require('../middleware/validation.js');
 
 router.get('/', getProduct);
 router.get('/:id', getProductById);
